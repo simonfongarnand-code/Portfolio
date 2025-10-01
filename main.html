@@ -8,6 +8,15 @@
   <title>Simon's Wonderful Portfolio !</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<img src="wallpaper.jpg" alt="Wallpaper" class="wallpaper">
-
+<body>
+  <audio id="loadingSoundEffect" src="WindowsXPStartup.wav"></audio>
+  <img src="Bliss.png" alt="Wallpaper" class="wallpaper">
+  <script>
+    document.addEventListener('click', function playAudioOnce() {
+      document.getElementById('loadingSoundEffect').play();
+      document.removeEventListener('click', playAudioOnce);
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
 </html>
