@@ -24,6 +24,7 @@ body {
     width: 100vw;
     height: 31px;
     z-index:0;
+    overflow: hidden;
 }
 
 #startMenu{
