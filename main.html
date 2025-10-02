@@ -5,18 +5,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simon's Wonderful Portfolio !</title>
+  <title>Simon XP</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <audio id="loadingSoundEffect" src="WindowsXPStartup.wav"></audio>
-  <img src="Bliss.png" alt="Wallpaper" class="wallpaper">
+
+  <audio id="loadingSoundEffect" src="assets/sounds/WindowsXPStartup.wav"></audio>
+
+  <!-- Toute la barre de tâche -->
+  <div id=taskBar>
+    <div id = "startMenu">
+      <div id="startMenuButton" class="startMenuButton-idle"></div>
+      <div id="startMenuLogo"></div> 
+    </div>
+  </div>
+
+  <!-- Affichage de l'image de fond d'écran -->
+  <img src="assets/images/Bliss.jpg" alt="Wallpaper" id="wallpaper">
+
+
+  <!-- Permet de jouer un son au démarrage de la page -->
   <script>
     document.addEventListener('click', function playAudioOnce() {
       document.getElementById('loadingSoundEffect').play();
       document.removeEventListener('click', playAudioOnce);
     });
   </script>
+
   <script src="script.js"></script>
 </body>
 </html>
