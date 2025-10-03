@@ -10,18 +10,27 @@
 </head>
 <body>
 
+  <div id="logInScreen">
+    <div id="logInBackground"></div>
+    <div id="logInUser"></div>
+  </div>
+
   <audio id="loadingSoundEffect" src="assets/sounds/WindowsXPStartup.wav"></audio>
 
   <!-- Toute la barre de tâche -->
   <div id=taskBar>
     <div id = "startMenu">
       <div id="startMenuButton" class="startMenuButton-idle"></div>
-      <div id="startMenuLogo"></div> 
+      <div id="startMenuLogo"></div>
+      <div id="startMenuText">start</div>
+    </div>
+    <div id = widgetTaskbar>
+      <div id="taskbarClock"></div>
     </div>
   </div>
 
   <!-- Affichage de l'image de fond d'écran -->
-  <img src="assets/images/Bliss.jpg" alt="Wallpaper" id="wallpaper">
+  <img src="assets/images/Bliss.jpg" id="wallpaper">
 
 
   <!-- Permet de jouer un son au démarrage de la page -->

@@ -6,6 +6,17 @@ body {
     border: none;
 }
 
+#logInScreen {
+    position: absolute;
+    display:flex;
+    background-image: url("assets/images/LoginBackground.png");
+    background-repeat: repeat-x;
+    width: 90%;
+    height: 100%;
+    z-index: 10;
+    overflow-x: hidden;
+}
+
 #wallpaper{
     position: absolute;
     display : flex;
@@ -25,6 +36,28 @@ body {
     height: 31px;
     z-index:0;
     overflow: hidden;
+}
+
+#widgetTaskbar{
+    position:absolute;
+    background-image: url("assets/images/taskbarWidgets.png");
+    background-repeat: repeat-x;
+    right : 0;
+    bottom: 0;
+    width: 15%;
+    height: 31px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#taskbarClock{
+    position: absolute;
+    right: 10px;
+    bottom: 6px;
+    font-family:  "Comic Sans Ms";
+    font-size: 12px;
+    color: white;
+    z-index: 2;
 }
 
 #startMenu{
@@ -66,5 +99,15 @@ body {
     height:19px;
     background-image: url("assets/images/SmallWindowsLogo.png");
     background-repeat: no-repeat;
+    z-index: 2;
+}
+
+#startMenuText{
+    position:absolute;
+    left: 30px;
+    bottom: 6px;
+    font-family:  "Comic Sans MS";
+    font-size: 22px;
+    color: white;
     z-index: 2;
 }
