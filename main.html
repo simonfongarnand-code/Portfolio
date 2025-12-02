@@ -5,42 +5,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simon XP</title>
+  <title>Simon - Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <div id="logInScreen">
-    <div id="logInBackground"></div>
-    <div id="logInUser"></div>
-  </div>
-
-  <audio id="loadingSoundEffect" src="assets/sounds/WindowsXPStartup.wav"></audio>
-
-  <!-- Toute la barre de tâche -->
-  <div id=taskBar>
-    <div id = "startMenu">
-      <div id="startMenuButton" class="startMenuButton-idle"></div>
-      <div id="startMenuLogo"></div>
-      <div id="startMenuText">start</div>
+  <header class="site_header">
+    <div class="wrapper_inner">
+      <nav class="site_header_nav">
+        <ul role="list" class="flex flex_center">
+          <li><a href="#0">
+            <img src="assets/home.svg" alt="Home" width="32" height="32">
+          </a>
+          </li>
+          <li><a href="#contact">
+              <img src="assets/contact.svg" alt="Contact" width="32" height="32">
+            </a>
+          </li>
+          <li><a href="#about">
+              <img src="assets/about.svg" alt="About" width="32" height="32">
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <div id = widgetTaskbar>
-      <div id="taskbarClock"></div>
-    </div>
-  </div>
+  </header>
+  <section id="hero">
+        <div class="wrapper">
+          <div class="wrapper_inner">
+            <div class="text_center hero_content">
+              <h1 class="h2">Simon Fongarnand</h1>
+              <p class="h5">Data scientist - AI Engineer</p>
+            </div>
+          </div>
+          <ul role="list" class="flex flex_between hero_social">
+            <address>Lille, France</address>
+            <ul role="list" class="flex">
+              <li>
+                <a href="https://github.com/simonfongarnand" target="_blank">
+                  <img src="assets/github.svg" alt="Github" width="32" height="32" />
+                </a>
+              </li>
+              <li>
+                <a href="https://instagram.com/simon.fongarnand/" target="_blank">
+                  <img src="assets/instagram.svg" alt="Instagram" width="32" height="32" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/simon-fongarnand-957a71271/" target="_blank">
+                  <img src="assets/linkedin.svg" alt="Linkedin" width="32" height="32" />
+                </a>
+              </li>
+            </ul>
+          </ul>
+        </div>
+      </section>
 
-  <!-- Affichage de l'image de fond d'écran -->
-  <img src="assets/images/Bliss.jpg" id="wallpaper">
-
-
-  <!-- Permet de jouer un son au démarrage de la page -->
-  <script>
-    document.addEventListener('click', function playAudioOnce() {
-      document.getElementById('loadingSoundEffect').play();
-      document.removeEventListener('click', playAudioOnce);
-    });
-  </script>
-
-  <script src="script.js"></script>
+  
 </body>
 </html>
