@@ -141,16 +141,6 @@ h5,
     justify-content: space-between;
 }
 
-@media (max-width: 468px) {
-    .flex_around {
-        justify-content: center;
-    }
-
-    .flex_between {
-        justify-content: center;
-    }
-}
-
 .text_center {
     text-align: center;
 }
@@ -251,3 +241,30 @@ section#hero {
     color: #FaFaFa;
 }
 
+#canvas {
+    background:rgba(127, 143, 191, 0.2);
+    border: 2px solid #7F8FBF;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#snakeSession{
+    margin: 0;
+    padding: 0;
+    background:rgb(26, 26, 64);
+    font-family: Arial, sans-serif;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+#score {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
