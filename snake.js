@@ -145,4 +145,4 @@ function startGame() {
     game = setInterval(drawGame, gameSpeed);
 }
 
-startGame();
+// startGame();

@@ -27,17 +27,7 @@ ol[role="list"] {
     padding: 0;
 }
 
-/* Set core root defaults */
-html:focus-within {
-    scroll-behavior: smooth;
-}
-
 /* Set core body defaults */
-body {
-    min-height: 100vh;
-    text-rendering: optimizeSpeed;
-    letter-spacing: -0.01em;
-}
 
 /* All elements that don't have a class get default styles */
 a:not([class]) {
@@ -267,4 +257,56 @@ section#hero {
     font-size: 1.2rem;
     margin-top: 20px;
     margin-bottom: 10px;
+}
+
+.typewriter-effect {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-s);
+    font-family: monospace;
+}
+
+
+.typewriter-effect>.bigtext {
+    max-width: 0;
+    animation: typing 3s steps(var(--characters)) forwards, blink-border 1s infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: var(--step-5);
+    position: relative;
+    box-shadow: 1px 0 0 currentColor;
+}
+
+.typewriter-effect>.smalltext {
+    max-width: 0;
+    animation: typing 3s steps(var(--characters)) forwards, blink-border 1s infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: var(--step-3);
+    position: relative;
+    box-shadow: 1px 0 0 currentColor;
+}
+
+
+@keyframes typing {
+
+    75%,
+    100% {
+        max-width: calc(var(--characters) * 1ch);
+    }
+}
+
+@keyframes blink-border {
+
+    0%,
+    75%,
+    100% {
+        box-shadow: 1px 0 0 currentColor;
+    }
+
+    25% {
+        box-shadow: 1px 0 0 transparent;
+    }
 }
